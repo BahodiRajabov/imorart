@@ -1,0 +1,24 @@
+.heading {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .heading {
+    font-size: 56px;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .heading {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+}

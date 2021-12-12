@@ -1,0 +1,22 @@
+.image-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@include breakpoint-down(1024px) {
+
+  .image-title {
+    font-size: 20px;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .image-title {
+    font-size: 24px;
+  }
+
+}

@@ -1,0 +1,21 @@
+.mark {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-image: url(../img/icon/mark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}

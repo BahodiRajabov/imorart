@@ -1,0 +1,26 @@
+.site-button {
+  padding: 14px 39px;
+  font-size: 20px;
+  line-height: 28px;
+  color: $color-white;
+  background-color: $color-secondary;
+  border: none;
+  cursor: pointer;
+}
+
+@include breakpoint-down(1024px) {
+
+  .site-button {
+    font-size: 18px;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .image-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}

@@ -1,0 +1,35 @@
+.blue-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-secondary;
+}
+
+.blue-text--bolder {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .blue-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .blue-text--bolder {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .blue-text--bolder {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+}

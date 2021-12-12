@@ -1,0 +1,50 @@
+.site-link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-brand;
+  border-bottom: 1px solid $color-brand;
+}
+
+.site-link--squared {
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 100%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-brand;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-brand;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    content: '';
+  }
+}
+
+@include breakpoint-down(1024px) {
+
+  .heading {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+}
