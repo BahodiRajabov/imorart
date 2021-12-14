@@ -532,4 +532,89 @@ img {
   background-repeat: no-repeat;
   content: '';
 }
+
+.site-header {
+  padding-top: 32px;
+  padding-bottom: 644px;
+  background-image: url(../img/kitchen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__call-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-header__call-link::before {
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+  background-image: url(../img/icon/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+@media only screen and (max-width: 990px) {
+  .site-header {
+    background-image: url(../img/kitchen-tablet.jpg);
+  }
+}
+
+@media only screen and (max-width: 990px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 990px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 990px) and (min-device-pixel-ratio: 2), only screen and (max-width: 990px) and (min-resolution: 192dpi), only screen and (max-width: 990px) and (min-resolution: 2dppx) {
+  .site-header {
+    background-image: url(../img/kitchen-tablet@2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .site-header {
+    background-image: url(../img/kitchen-mobile.jpg) !important;
+  }
+  .site-header__call-link {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 520px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 520px) and (min-device-pixel-ratio: 2), only screen and (max-width: 520px) and (min-resolution: 192dpi), only screen and (max-width: 520px) and (min-resolution: 2dppx) {
+  .site-header {
+    background-image: url(../img/kitchen-mobile@2x.jpg) !important;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .site-header {
+    background-image: url(../img/kitchen@2x.jpg);
+  }
+}
+
+.logo-link {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 520px) {
+  .logo-link--dark {
+    color: #1c1c1c;
+  }
+}
 /*# sourceMappingURL=main.css.map */

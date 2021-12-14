@@ -1,0 +1,11 @@
+.logo-link {
+  color: $color-white;
+}
+
+@include breakpoint-down(520px) {
+
+  .logo-link--dark {
+    color: $color-dark;
+  }
+
+}

@@ -1,0 +1,73 @@
+.site-header {
+  padding-top: 32px;
+  padding-bottom: 644px;
+  background-image: url(../img/kitchen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__call-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 11px;
+    background-image: url(../img/icon/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+  }
+}
+
+@include breakpoint-down(990px) {
+
+  .site-header {
+    background-image: url(../img/kitchen-tablet.jpg);
+  }
+
+  @include cssretina {
+    .site-header {
+      background-image: url(../img/kitchen-tablet@2x.jpg);
+    }
+  }
+
+}
+
+@include breakpoint-down(520px) {
+
+  .site-header {
+    background-image: url(../img/kitchen-mobile.jpg) !important;
+  }
+
+  .site-header__call-link {
+    display: none;
+  }
+
+  @include cssretina {
+
+    .site-header {
+      background-image: url(../img/kitchen-mobile@2x.jpg) !important;
+    }
+  
+  }
+
+}
+
+@include cssretina {
+
+  .site-header {
+    background-image: url(../img/kitchen@2x.jpg);
+  }
+
+} 
