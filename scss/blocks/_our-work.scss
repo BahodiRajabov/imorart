@@ -1,0 +1,53 @@
+.our-work {
+  padding-top: 109px;
+  padding-bottom: 46px;
+}
+
+.our-work__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.our-work__heading {
+  max-width: 575px;
+  margin: 0;
+}
+
+
+
+@include breakpoint-down(1025px) {
+
+  .our-work {
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+
+  .our-work__heading {
+    max-width: 520px;
+  }
+
+}
+
+@include breakpoint-down(775px) {
+
+  .our-work__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 62px;
+  }
+
+  .our-work__heading {
+    margin-bottom: 16px;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .our-work__header {
+    margin-bottom: 60px;
+  }
+
+}

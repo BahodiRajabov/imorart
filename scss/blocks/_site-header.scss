@@ -1,7 +1,10 @@
 .site-header {
   padding-top: 32px;
   padding-bottom: 644px;
-  background-image: url(../img/kitchen.jpg);
+  background-image: image-set(
+    url(../img/kitchen.jpg) 1x,
+    url(../img/kitchen@2x.jpg) 2x,
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,13 +36,11 @@
 @include breakpoint-down(990px) {
 
   .site-header {
-    background-image: url(../img/kitchen-tablet.jpg);
-  }
-
-  @include cssretina {
-    .site-header {
-      background-image: url(../img/kitchen-tablet@2x.jpg);
-    }
+    padding-bottom: 415px;
+    background-image: image-set(
+      url(../img/kitchen-tablet.jpg) 1x,
+      url(../img/kitchen-tablet@2x.jpg) 2x
+    );
   }
 
 }
@@ -47,27 +48,15 @@
 @include breakpoint-down(520px) {
 
   .site-header {
-    background-image: url(../img/kitchen-mobile.jpg) !important;
+    padding-bottom: 495px;
+    background-image: image-set(
+      url(../img/kitchen-mobile.jpg) 1x,
+      url(../img/kitchen-mobile@2x.jpg) 2x
+    );
   }
 
   .site-header__call-link {
     display: none;
   }
 
-  @include cssretina {
-
-    .site-header {
-      background-image: url(../img/kitchen-mobile@2x.jpg) !important;
-    }
-  
-  }
-
 }
-
-@include cssretina {
-
-  .site-header {
-    background-image: url(../img/kitchen@2x.jpg);
-  }
-
-} 

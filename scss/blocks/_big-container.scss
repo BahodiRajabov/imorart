@@ -1,0 +1,27 @@
+/* BIG CONTAINER */
+.big-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include breakpoint-down(1024px) {
+
+  .big-container {
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@include breakpoint-down(620px) {
+
+  .big-container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
