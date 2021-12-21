@@ -7,7 +7,27 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-brand;
-  border-bottom: 1px solid $color-brand;
+  // border-bottom: 1px solid $color-brand;
+
+  &::before {
+    width: 0;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    background-color: $color-brand;
+    transform-origin: center;
+    transition: width 0.3s ease;
+    content: '';
+  }
+
+  &:hover {
+
+    &::before {
+      width: 100%;
+    }
+  }
 }
 
 .site-link--squared {
