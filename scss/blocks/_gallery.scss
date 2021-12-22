@@ -102,6 +102,11 @@
 .gallery__figure {
   margin: 0;
   margin-left: 30px;
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(95%);
+  }
 }
 
 .gallery__img-design {
@@ -121,6 +126,12 @@
 
 .gallery__design-style {
   margin: 0;
+}
+
+.gallery__link {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
 }
 
 
