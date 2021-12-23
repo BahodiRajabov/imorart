@@ -242,9 +242,27 @@
     flex-direction: column;
   }
 
+  .gallery__figure-link {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .gallery__link {
+    flex-grow: 1;
+  }
+
   .gallery__img-design {
     width: 552px;
     flex-grow: 1;
+  }
+
+  .gallery__design-heading {
+    margin-right: 16px;
+  }
+
+  .gallery__design-style {
+    white-space: nowrap;
   }
 
 }
@@ -285,6 +303,10 @@
   .gallery__design-title {
     flex-wrap: wrap;
     padding-left: 20px !important;
+  }
+
+  .gallery__link {
+    display: none;
   }
 
 }
