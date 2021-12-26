@@ -1,0 +1,153 @@
+.partners {
+  padding-bottom: 180px;
+}
+
+.partners__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-bottom: -20px;
+  @include list-unstyled;
+}
+
+.partners__item {
+  width: calc(100% / 4 - 20px);
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.partners__link {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 69px 30px 72px 30px;
+  background-color: $color-lead;
+}
+
+.partners__img {
+  display: block;
+  object-fit: contain;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .partners__title {
+    margin-bottom: 30px;
+  }
+
+  .partners__list {
+    margin-left: -13px;
+    margin-bottom: -13px;
+  }
+  
+
+  .partners__item {
+    width: calc(100% / 4 - 13px);
+    margin-left: 13px;
+    margin-bottom: 13px;
+  }
+
+}
+
+@include breakpoint-down(955px) {
+
+  .partners__list {
+    margin-left: -25px;
+    margin-bottom: -25px;
+  }
+  
+  .partners__item {
+    width: calc(100% / 3 - 25px);
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+}
+
+@include breakpoint-down(670px) {
+
+  .partners__link {
+    align-items: center;
+    padding: 36px 10px;
+  }
+
+  .partners__img--nt {
+    width: 64px;
+    height: 54px;
+  }
+
+  .partners__img--bank {
+    width: 82px;
+    height: 13px;
+  }
+
+  .partners__img--pizza {
+    width: 60px;
+    height: 56px;
+  }
+
+  .partners__img--express {
+    width: 83px;
+    height: 20px;
+  }
+
+  .partners__img--amity {
+    width: 69px;
+    height: 20px;
+  }
+
+  .partners__img--card {
+    width: 33px;
+    height: 47px;
+  }
+
+  .partners__img--nmedov {
+    width: 53px;
+    height: 40px;
+  }
+
+  .partners__img--white-burger {
+    width: 69px;
+    height: 38px;
+  }
+
+}
+
+@include breakpoint-down(530px) {
+
+  .partners__list {
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .partners__item {
+    width: calc(100% / 3 - 10px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@include breakpoint-down(410px) {
+  
+  .partners__link {
+    padding: 26px 10px;
+  }
+
+}
+
+@include breakpoint-down(345px) {
+
+  .partners__item {
+    width: calc(100% / 2 - 10px);
+  }
+
+}
