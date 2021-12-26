@@ -1,0 +1,148 @@
+.plans-services {
+  padding-top: 200px;
+  padding-bottom: 146px;
+}
+
+.plans-services__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.plans-services__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans-services__item {
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: $color-lead;
+}
+
+.plans-services__item-inner {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.plans-services__item-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 36px;
+}
+
+.plans-services__item-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.plans-services__item-list {
+  flex-grow: 1;
+  @include list-unstyled;
+}
+
+.plans-services__item-plan {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.plans-services__item-text {
+  margin: 0;
+  margin-left: 14px;
+  line-height: 26px;
+}
+
+.plans-services__item-bottom {
+  width: 100%;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.plans-services__desc-list {
+  @include list-unstyled;
+  margin-bottom: 50px;
+}
+
+.plans-services__desc-item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+
+.plans-services__desc-text {
+  line-height: 26px;
+}
+
+.plans-services__desc-sum {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.plans-services__item-link {
+  display: inline-block;
+}
+
+
+@include breakpoint-down(830px) {
+
+  .plans-services {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  .plans-services__grid {
+    flex-direction: column;
+  }
+
+  .plans-services__item {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+}
+
+@include breakpoint-down(670px) {
+
+  .plans-services {
+    padding-top: 119px;
+    padding-bottom: 120px;
+  }
+  
+  .plans-services__title {
+    margin-bottom: 36px;
+    font-size: 32px !important;
+    line-height: 41px !important;
+  }
+
+  .plans-services__item {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .plans-services__item-heading {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+}

@@ -722,6 +722,7 @@ img {
   padding: 14px 39px;
   font-size: 20px;
   line-height: 28px;
+  text-decoration: none;
   color: #ffffff;
   background-color: #00B8B8;
   border: none;
@@ -792,11 +793,13 @@ img {
 }
 
 .mark {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
   width: 18px;
   height: 18px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 50%;
 }
 
@@ -807,6 +810,8 @@ img {
   z-index: 1;
   left: 0;
   top: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background-image: url(../img/icon/mark.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1399,6 +1404,186 @@ img {
   }
   .services__desc--second {
     margin-bottom: 32px;
+  }
+}
+
+.plans-services {
+  padding-top: 200px;
+  padding-bottom: 146px;
+}
+
+.plans-services__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.plans-services__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plans-services__item {
+  width: calc(50% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  background-color: #202020;
+}
+
+.plans-services__item-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.plans-services__item-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-bottom: 36px;
+}
+
+.plans-services__item-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.plans-services__item-list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans-services__item-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans-services__item-plan:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.plans-services__item-text {
+  margin: 0;
+  margin-left: 14px;
+  line-height: 26px;
+}
+
+.plans-services__item-bottom {
+  width: 100%;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.plans-services__desc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.plans-services__desc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plans-services__desc-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.plans-services__desc-text {
+  line-height: 26px;
+}
+
+.plans-services__desc-sum {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.plans-services__item-link {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 830px) {
+  .plans-services {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .plans-services__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .plans-services__item {
+    width: 100%;
+  }
+  .plans-services__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .plans-services {
+    padding-top: 119px;
+    padding-bottom: 120px;
+  }
+  .plans-services__title {
+    margin-bottom: 36px;
+    font-size: 32px !important;
+    line-height: 41px !important;
+  }
+  .plans-services__item {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .plans-services__item-heading {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
