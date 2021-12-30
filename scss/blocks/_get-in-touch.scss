@@ -1,0 +1,179 @@
+.get-in-touch__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.get-in-touch__content {
+  margin-top: 45px;
+}
+
+.get-in-touch__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.get-in-touch__heading {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.get-in-touch__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-in-touch__form-control {
+  width: 100%;
+  padding: 20px 16px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &::placeholder {
+    color: #fff;
+    opacity: 0.4;
+  }
+}
+
+.get-in-touch__message-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 14px;
+  margin-bottom: 60px;
+}
+
+.get-in-touch__message-label {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.get-in-touch__message {
+  width: 100%;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  resize: none;
+}
+
+.get-in-touch__submit-btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.get-in-touch__decoration {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.get-in-touch__img {
+  display: block;
+  margin-bottom: 93px;
+}
+
+.get-in-touch__img img {
+  display: block;
+}
+
+.get-in-touch__btn {
+  padding: 16px 32px;
+  background-color: $color-white-transparent;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+@include breakpoint-down(1156px) {
+
+  .get-in-touch__heading {
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+}
+
+@include breakpoint-down(1090px) {
+
+  .get-in-touch__container {
+    align-items: flex-start;
+  }
+
+  .get-in-touch__decoration {
+    margin-top: 43px;
+  }
+
+  .get-in-touch__img {
+    margin-bottom: 64px;
+  }
+
+  .get-in-touch__img img {
+    width: 456px;
+  }
+
+}
+
+@include breakpoint-down(920px) {
+
+  .get-in-touch__container {
+    flex-direction: column;
+  }
+
+  .get-in-touch__decoration {
+    align-self: flex-end;
+  }
+
+  .get-in-touch__img {
+    display: none;
+  }
+
+}
+
+@include breakpoint-down(464px) {
+
+  .get-in-touch__decoration {
+    margin-top: 23px;
+  }
+
+  .get-in-touch__text {
+    display: none;
+  }
+
+  .get-in-touch__btn {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+}
+
+@include breakpoint-down(370px) {
+
+  .get-in-touch__content {
+    width: 100%;
+  }
+
+  .get-in-touch__heading {
+    margin-bottom: 10px;
+    font-size: 37px !important;
+  }
+
+}

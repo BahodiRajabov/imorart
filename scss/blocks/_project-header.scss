@@ -1,0 +1,48 @@
+.project-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.project-header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-header__menu-btn {
+  visibility: hidden;
+  padding: 0;
+  font-size: 18px;
+  line-height: 23px;
+  color: $color-white;
+  background-color: transparent;
+  border: none;
+}
+
+.project-header__menu-btn-inner {
+  display: flex;
+  align-items: center;
+}
+
+.project-header__menu-btn-txt {
+  margin-left: 8px;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .project-header__menu-btn {
+    visibility: visible;
+  }
+
+}
+
+@include breakpoint-down(660px) {
+
+  .project-header__back-link {
+    display: none;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+}

@@ -137,6 +137,10 @@
 }
 
 @include breakpoint-down(410px) {
+
+  .partners {
+    padding-bottom: 100px;
+  }
   
   .partners__link {
     padding: 26px 10px;

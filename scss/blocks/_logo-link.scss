@@ -2,10 +2,14 @@
   color: $color-white;
 }
 
+.logo-link__img {
+  display: block;
+}
+
 @include breakpoint-down(520px) {
 
-  .logo-link--dark {
-    color: $color-dark;
+  .logo-link__img {
+    width: 159px;
   }
 
 }

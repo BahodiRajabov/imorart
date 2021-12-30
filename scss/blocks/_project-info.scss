@@ -1,0 +1,177 @@
+.project-info {
+  padding-top: 51px;
+  padding-bottom: 100px;
+}
+
+// .project-info__container {
+
+// }
+
+.project-info__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-unstyled;
+  margin-bottom: 140px;
+}
+
+.project-info__item {
+
+  &:not(:last-child) {
+    display: flex;
+    margin-right: 40px;
+
+    &::after {
+      width: 1px;
+      height: 100%;
+      margin-left: 40px;
+      background-color: #fff;
+      content: '';
+    }
+  }
+}
+
+.project-info__item-heading {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.project-info__item-content {
+  margin: 0;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.project-info__gallery {
+  @include list-unstyled;
+}
+
+.project-info__gallery-item {
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.project-info__gallery-img img {
+  display: block;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .project-info__list {
+    margin-bottom: 80px;
+  }
+
+  .project-info__gallery-item {
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+}
+
+@include breakpoint-down(769px) {
+
+  .project-info__item {
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+}
+
+@include breakpoint-down(740px) {
+
+  .project-info__item {
+
+    &:not(:last-child) {
+        
+      &::after {
+        display: none;
+      }
+    }
+
+    &:first-child {
+        
+      &::after {
+        display: block;
+        margin-left: 18px;
+      }
+    }
+
+  }
+
+}
+
+@include breakpoint-down(662px) {
+
+  .project-info__item {
+
+    &:last-child {
+      margin-top: 24px;
+    }
+  }
+
+}
+
+@include breakpoint-down(446px) {
+
+  .project-info__item-heading {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .project-info__item-content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .project-info__gallery-item {
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+}
+
+@include breakpoint-down(334px) {
+
+  .project-info__list {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .project-info__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
+    }
+
+    &:first-child {
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}

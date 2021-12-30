@@ -6,6 +6,10 @@
   margin-right: auto;
 }
 
+.big-container--bigger {
+  padding: 0 !important;
+}
+
 @include breakpoint-down(1024px) {
 
   .big-container {
