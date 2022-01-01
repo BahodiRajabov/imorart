@@ -1,0 +1,84 @@
+.carousel {
+
+}
+
+.carousel__list {
+  display: flex;
+  @include list-unstyled;
+}
+
+.carousel__item {
+
+}
+
+.carousel__img img {
+  display: block;
+}
+
+.carousel__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.carousel__button {
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel__button-inner {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icon/arrow-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
+
+.carousel__button--previous
+.carousel__button-inner {
+
+  &::before {
+    margin-right: 11px;
+  }
+}
+
+.carousel__button--next
+.carousel__button-inner {
+  flex-direction: row-reverse;
+
+  &::before {
+    margin-left: 11px;
+    transform: rotate(180deg);
+  }
+}
+
+
+@include breakpoint-down(995px) {
+
+  .carousel__buttons {
+    display: none;
+  }
+
+}
+
+@include breakpoint-down(400px) {
+
+  .carousel__img img {
+    height: 100%;
+  }
+
+}

@@ -614,6 +614,108 @@ img {
   padding-right: 20px;
 }
 
+.carousel-section {
+  padding-bottom: 395px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel-section {
+    padding-bottom: 130px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel-section {
+    padding-bottom: 100px;
+  }
+}
+
+.carousel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel__img img {
+  display: block;
+}
+
+.carousel__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.carousel__button {
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel__button-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel__button-inner::before {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon/arrow-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.carousel__button--previous
+.carousel__button-inner::before {
+  margin-right: 11px;
+}
+
+.carousel__button--next
+.carousel__button-inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.carousel__button--next
+.carousel__button-inner::before {
+  margin-left: 11px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 995px) {
+  .carousel__buttons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel__img img {
+    height: 100%;
+  }
+}
+
 .heading {
   font-weight: 500;
   font-size: 64px;
@@ -1712,6 +1814,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .get-in-touch__content {
+    margin-top: 0;
   }
   .get-in-touch__decoration {
     -ms-flex-item-align: end;

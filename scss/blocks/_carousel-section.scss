@@ -1,0 +1,20 @@
+.carousel-section {
+  padding-bottom: 395px;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .carousel-section {
+    padding-bottom: 130px;
+  }
+
+}
+
+@include breakpoint-down(400px) {
+
+  .carousel-section {
+    padding-bottom: 100px;
+  }
+
+}

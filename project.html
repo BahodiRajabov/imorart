@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -110,7 +111,128 @@
       </div>
     </section>
 
+    <section class="carousel-section">
+      <h2 class="visually-hidden">Our projects</h2>
+      <div class="big-container big-container--bigger">
+        <div class="carousel">
+          <ul class="carousel__list">
+            <li class="carousel__item">
+              <picture class="carousel__img">
+                <source media="(max-width: 375px)" srcset="img/mobile1.jpg 1x, img/mobile1@2x.jpg 2x">
+                <source media="(max-width: 1024px)" srcset="img/tablet1.jpg 1x, img/tablet1@2x.jpg 2x">
+                <img src="img/img1.jpg" srcset="img/img1@2x.jpg 2x" alt="img" width="1440" height="600">
+              </picture>
+            </li>
+            <li class="carousel__item">
+              <picture class="carousel__img">
+                <source media="(max-width: 375px)" srcset="img/mobile2.jpg 1x, img/mobile2@2x.jpg 2x">
+                <source media="(max-width: 1024px)" srcset="img/tablet2.jpg 1x, img/tablet2@2x.jpg 2x">
+                <img src="img/img2.jpg" srcset="img/img2@2x.jpg 2x" alt="img" width="1440" height="600">
+              </picture>
+            </li>
+            <li class="carousel__item">
+              <picture class="carousel__img">
+                <source media="(max-width: 375px)" srcset="img/mobile3.jpg 1x, img/mobile3@2x.jpg 2x">
+                <source media="(max-width: 1024px)" srcset="img/tablet3.jpg 1x, img/tablet3@2x.jpg 2x">
+                <img src="img/img3.jpg" srcset="img/img3@2x.jpg 2x" alt="img" width="1440" height="600">
+              </picture>
+            </li>
+            <li class="carousel__item">
+              <picture class="carousel__img">
+                <source media="(max-width: 375px)" srcset="img/mobile4.jpg 1x, img/mobile4@2x.jpg 2x">
+                <source media="(max-width: 1024px)" srcset="img/tablet4.jpg 1x, img/tablet4@2x.jpg 2x">
+                <img src="img/img4.jpg" srcset="img/img4@2x.jpg 2x" alt="img" width="1440" height="600">
+              </picture>
+            </li>
+          </ul>
+          <div class="carousel__buttons">
+            <button class="carousel__button carousel__button--previous">
+              <span class="carousel__button-inner">Previous project</span>
+            </button>
+            <button class="carousel__button carousel__button--next">
+              <span class="carousel__button-inner">Next project</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-get-in-touch">
+      <h2 class="visually-hidden">contact us</h2>
+      <div class="get-in-touch">
+        <div class="get-in-touch__container container">
+          <div class="get-in-touch__content">
+            <p class="get-in-touch__text blue-text">Tell us about your dream project</p>
+            <p class="get-in-touch__heading heading">Get in touch</p>
+            <form  class="get-in-touch__form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="get-in-touch__form-control" type="text" name="Name" aria-label="Name" placeholder="Name" required>
+              <input class="get-in-touch__form-control" type="tel" name="Phone number" aria-label="Phone number" placeholder="Phone number" required>
+              <input class="get-in-touch__form-control" type="email" name="Email" aria-label="Email" placeholder="Email" required>
+              <div class="get-in-touch__message-wrapper">
+                <label class="get-in-touch__message-label" for="message">Tell us about your project</label>
+                <textarea class="get-in-touch__message" rows="3" id="message" name="message"></textarea>
+              </div>
+              <button class="get-in-touch__submit-btn site-link site-link--animated" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="get-in-touch__decoration">
+            <picture class="get-in-touch__img">
+              <source media="(max-width: 1024px)" srcset="img/get-touch-mobile.jpg 1x, img/get-touch-mobile@2x.jpg 2x">
+              <img src="img/get-touch-img.jpg" srcset="img/get-touch-img@2x.jpg" alt="" width="620" height="660">
+            </picture>
+            <button class="get-in-touch__btn">Order now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <footer class="site-footer">
+
+    <div class="site-footer__container container">
+      <div class="site-footer__content">
+        <p class="site-footer__desc">© ImorArt, Tashkent 2021</p>
+        <p class="site-footer__desc">Privacy policy</p>
+        <a class="site-footer__desc" href="tel:998712202223">+998 71 220-22-23</a>
+      </div>
+      <ul class="site-footer__social-list">
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-item-link" href="#">
+            <img class="site-footer__social-item-img" src="img/icon/instagram.svg" alt="instagram" width="32" height="32">
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-item-link" href="#">
+            <img class="site-footer__social-item-img" src="img/icon/facebook.svg" alt="facebook" width="32" height="32">
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-item-link" href="#">
+            <img class="site-footer__social-item-img" src="img/icon/youtube.svg" alt="youtube" width="32" height="32">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+  
+  <script src="js/tiny-slider.js"></script>
+  <script>
+    var slider = tns({
+      "container" : ".carousel__list",
+      "prevButton" : ".carousel__button--previous",
+      "nextButton" : ".carousel__button--next",
+      "autoHeight": true,
+      "items": 1,
+      "swipeAngle": false,
+      "speed": 400,
+      "autoplay": true,
+      "nav": false,
+      "mouseDrag": true,
+      "autoHeight": true,
+      "autoplayButtonOutput": false
+  });
+  </script>
 </body>
 </html>
