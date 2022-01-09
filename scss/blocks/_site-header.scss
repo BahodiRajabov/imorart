@@ -33,8 +33,7 @@
   }
 
   &:hover {
-    transition: transform 0.2s ease;
-    transform: scale(110%);
+    opacity: 0.8;
   }
 }
 
@@ -61,6 +60,15 @@
   }
 
   .site-header__call-link {
+
+    &::before {
+      width: 28px;
+      height: 28px;
+      background-size: cover;
+    }
+  }
+
+  .site-header__call-link span {
     display: none;
   }
 

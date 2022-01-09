@@ -1,5 +1,9 @@
 .logo-link {
   color: $color-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .logo-link__img {

@@ -87,7 +87,6 @@
 
 .get-in-touch__img {
   display: block;
-  margin-bottom: 93px;
 }
 
 .get-in-touch__img img {
@@ -95,11 +94,20 @@
 }
 
 .get-in-touch__btn {
+  position: fixed;
+  z-index: 1;
+  bottom: 15vh;
   padding: 16px 32px;
+  text-decoration: none;
+  color: $color-lead;
   background-color: $color-white-transparent;
   border: none;
   border-radius: 30px;
-  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 
@@ -120,10 +128,6 @@
 
   .get-in-touch__decoration {
     margin-top: 43px;
-  }
-
-  .get-in-touch__img {
-    margin-bottom: 64px;
   }
 
   .get-in-touch__img img {

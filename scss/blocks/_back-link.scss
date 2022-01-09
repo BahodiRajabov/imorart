@@ -17,4 +17,8 @@
     background-repeat: no-repeat;
     content: '';
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

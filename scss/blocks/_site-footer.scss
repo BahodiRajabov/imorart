@@ -25,6 +25,14 @@
   }
 }
 
+.site-footer__desc--link {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-brand;
+  }
+}
+
 .site-footer__social-list {
   display: flex;
   align-items: center;
@@ -35,6 +43,14 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+.site-footer__social-item-link {
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 

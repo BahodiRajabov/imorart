@@ -1,6 +1,5 @@
 .header-projects {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 99px;
 }
 
 .header-projects__container {
@@ -10,4 +9,21 @@
 
 .header-projects__logo-link {
   margin: 0 auto;
+}
+
+
+@include breakpoint-down(1024px) {
+
+  .header-projects {
+    padding-bottom: 55px;
+  }
+
+  .header-projects__logo-link {
+    margin: 0;
+  }
+
+  .logo-link__back-link {
+    display: none;
+  }
+
 }

@@ -9,14 +9,307 @@
 </head>
 <body>
 
-  <header class="header-projects">
-    <div class="header-projects__container container">
-      <a class="logo-link__back-link back-link" href="index.html">Back</a>
-      <a class="header-projects__logo-link logo-link" href="index.html">
-        <img class="logo-link__img" src="img/icon/imorat-logo.svg" alt="logo imorart" width="180" height="50">
-      </a>
+  <main class="site-main">
+
+    <section class="our-projects">
+      <div class="our-projects__container container">
+        <div class="our-projects__inner">
+          <header class="header-projects">
+            <div class="header-projects__container">
+              <a class="logo-link__back-link back-link" href="index.html">Back</a>
+              <a class="header-projects__logo-link logo-link" href="index.html">
+                <img class="logo-link__img" src="img/icon/imorat-logo.svg" alt="logo imorart" width="180" height="50">
+              </a>
+            </div>
+          </header>
+          <div class="our-projects__header">
+            <h1 class="our-projects__heading heading">Our projects</h1>
+            <a class="our-projects__link site-link site-link--animated" href="#getintouch">Get in touch</a>
+          </div>
+          <div class="our-projects__filter">
+            <div class="our-projects__filter-inner">
+              <header class="our-projects__filter-header">
+                <h2 class="our-projects__filter-heading blue-text">Filters</h2>
+                <button class="our-projects__filter-header-close-button js-filter-close">
+                  <span class="our-projects__filter-header-button-inner">Close</span>
+                </button>
+              </header>
+              <ul class="our-projects__list">
+                <li class="our-projects__item">
+                  <button class="our-projects__btn our-projects__btn--active" type="button" data-filter="all">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">All projects</span>
+                      <sup class="our-projects__btn-project-count">177</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="neo-classic">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Neo-classic</span>
+                      <sup class="our-projects__btn-project-count">56</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="classic">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Classic</span>
+                      <sup class="our-projects__btn-project-count">32</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="abstract">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Abstract</span>
+                      <sup class="our-projects__btn-project-count">27</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="loft">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Loft</span>
+                      <sup class="our-projects__btn-project-count">25</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="luxury">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Luxury</span>
+                      <sup class="our-projects__btn-project-count">20</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="hi-tech">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Hi-tech</span>
+                      <sup class="our-projects__btn-project-count">14</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="bauhaus">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Bauhaus</span>
+                      <sup class="our-projects__btn-project-count">7</sup>
+                    </span>
+                  </button>
+                </li>
+                <li class="our-projects__item">
+                  <button class="our-projects__btn" type="button" data-filter="others">
+                    <span class="our-projects__btn-inner">
+                      <span class="our-projects__btn-txt">Others</span>
+                      <sup class="our-projects__btn-project-count">3</sup>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="our-projects__filter-toggler js-filter-btn">
+            <span class="our-projects__filter-toggler-inner">Filters</span>
+          </button>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery__container container">
+          <ul class="gallery__list">
+
+            <li class="gallery__item">
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/boutique.jpg" srcset="img/boutique@2x.jpg 2x" alt="img" width="858" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Boutique hotel</h3>
+                  <p class="gallery__design-style blue-text">Abstract</p>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/sofa.jpg" srcset="img/sofa@2x.jpg 2x" alt="img" width="552" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Countryside villa</h3>
+                  <p class="gallery__design-style blue-text">Neo-classic</p>
+                </figcaption>
+              </figure>
+
+            </li>
+
+            <li class="gallery__item">
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/seaside.jpg" srcset="img/seaside@2x.jpg 2x" alt="img" width="858" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Seaside apartment</h3>
+                  <p class="gallery__design-style blue-text">Loft</p>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/city-d.jpg" srcset="img/city-d@2x.jpg 2x" alt="img" width="552" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">City denthouse</h3>
+                  <p class="gallery__design-style blue-text">Modern</p>
+                </figcaption>
+              </figure>
+
+            </li>
+
+            <li class="gallery__item">
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/sweming.jpg" srcset="img/sweming@2x.jpg 2x" alt="img" width="858" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Sweming boutique</h3>
+                  <p class="gallery__design-style blue-text">Hi-tech</p>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/luxury.jpg" srcset="img/luxury@2x.jpg 2x" alt="img" width="552" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Luxury studio</h3>
+                  <p class="gallery__design-style blue-text">Luxury</p>
+                </figcaption>
+              </figure>
+
+            </li>
+
+            <li class="gallery__item">
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/industrial.jpg" srcset="img/industrial@2x.jpg 2x" alt="img" width="858" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Industrial edge kitchen</h3>
+                  <p class="gallery__design-style blue-text">Bauhaus</p>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__figure">
+                <a class="gallery__figure-link" href="project.html">
+                  <img class="gallery__img-design" src="img/classic.jpg" srcset="img/classic@2x.jpg 2x" alt="img" width="552" height="476">
+                  <span class="gallery__figure-link-text">See work
+                    <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.338 4.199-9.325 9.324L.481 11.99l9.324-9.324H1.588V.5h11.916v11.917h-2.166V4.199Z" fill="#fff"/></svg>
+                  </span>
+                </a>
+                <figcaption class="gallery__design-title">
+                  <h3 class="gallery__design-heading image-title">Classic wardrobe</h3>
+                  <p class="gallery__design-style blue-text">Arabian</p>
+                </figcaption>
+              </figure>
+
+            </li>
+
+          </ul>
+
+          <div class="gallery__link">
+            <a class="site-link site-link--squared-animated site-link--squared" href="our-projects.html">See more</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="get-in-touch-section">
+      <h2 class="visually-hidden" id="getintouch">Get in touch</h2>
+
+      <div class="get-in-touch">
+        <div class="get-in-touch__container container">
+          <div class="get-in-touch__content">
+            <p class="get-in-touch__text blue-text">Tell us about your dream project</p>
+            <p class="get-in-touch__heading heading">Get in touch</p>
+            <form  class="get-in-touch__form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="get-in-touch__form-control" type="text" name="Name" aria-label="Name" placeholder="Name" required>
+              <input class="get-in-touch__form-control" type="tel" name="Phone number" aria-label="Phone number" placeholder="Phone number" required>
+              <input class="get-in-touch__form-control" type="email" name="Email" aria-label="Email" placeholder="Email" required>
+              <div class="get-in-touch__message-wrapper">
+                <label class="get-in-touch__message-label" for="message">Tell us about your project</label>
+                <textarea class="get-in-touch__message" rows="3" id="message" name="message"></textarea>
+              </div>
+              <button class="get-in-touch__submit-btn site-link site-link--animated" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="get-in-touch__decoration">
+            <picture class="get-in-touch__img">
+              <source media="(max-width: 1024px)" srcset="img/get-touch-mobile.jpg 1x, img/get-touch-mobile@2x.jpg 2x">
+              <img src="img/get-touch-img.jpg" srcset="img/get-touch-img@2x.jpg" alt="" width="620" height="660">
+            </picture>
+            <a class="get-in-touch__btn" href="#">Order now</a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="site-footer__container container">
+      <div class="site-footer__content">
+        <p class="site-footer__desc">© ImorArt, Tashkent 2021</p>
+        <p class="site-footer__desc">Privacy policy</p>
+        <a class="site-footer__desc site-footer__desc--link" href="tel:998712202223">+998 71 220-22-23</a>
+      </div>
+      <ul class="site-footer__social-list">
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-item-link" href="#" target="_blank">
+            <img class="site-footer__social-item-img" src="img/icon/instagram.svg" alt="instagram" width="32" height="32">
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-item-link" href="#" target="_blank">
+            <img class="site-footer__social-item-img" src="img/icon/facebook.svg" alt="facebook" width="32" height="32">
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-item-link" href="#" target="_blank">
+            <img class="site-footer__social-item-img" src="img/icon/youtube.svg" alt="youtube" width="32" height="32">
+          </a>
+        </li>
+      </ul>
     </div>
-  </header>
-  
+
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
