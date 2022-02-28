@@ -11,12 +11,15 @@
 .plans-services__grid {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
 }
 
 .plans-services__item {
   width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   padding: 50px;
   background-color: $color-lead;
 }
@@ -33,12 +36,17 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-bottom: 36px;
+}
+
+.plans-services__item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .plans-services__item-heading {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -47,6 +55,7 @@
 .plans-services__item-list {
   flex-grow: 1;
   @include list-unstyled;
+  margin-bottom: 35px;
 }
 
 .plans-services__item-plan {
@@ -96,6 +105,7 @@
 
 .plans-services__item-link {
   display: inline-block;
+  align-self: flex-start;
 
   &:hover {
     opacity: 0.8;
@@ -144,7 +154,6 @@
   }
 
   .plans-services__item-heading {
-    margin-bottom: 24px;
     font-size: 24px;
     line-height: 32px;
   }

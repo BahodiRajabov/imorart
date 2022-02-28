@@ -43,70 +43,6 @@
                     </span>
                   </button>
                 </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="neo-classic">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Neo-classic</span>
-                      <sup class="our-projects__btn-project-count">56</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="classic">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Classic</span>
-                      <sup class="our-projects__btn-project-count">32</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="abstract">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Abstract</span>
-                      <sup class="our-projects__btn-project-count">27</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="loft">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Loft</span>
-                      <sup class="our-projects__btn-project-count">25</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="luxury">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Luxury</span>
-                      <sup class="our-projects__btn-project-count">20</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="hi-tech">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Hi-tech</span>
-                      <sup class="our-projects__btn-project-count">14</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="bauhaus">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Bauhaus</span>
-                      <sup class="our-projects__btn-project-count">7</sup>
-                    </span>
-                  </button>
-                </li>
-                <li class="our-projects__item">
-                  <button class="our-projects__btn" type="button" data-filter="others">
-                    <span class="our-projects__btn-inner">
-                      <span class="our-projects__btn-txt">Others</span>
-                      <sup class="our-projects__btn-project-count">3</sup>
-                    </span>
-                  </button>
-                </li>
               </ul>
             </div>
           </div>
@@ -257,13 +193,16 @@
           <div class="get-in-touch__content">
             <p class="get-in-touch__text blue-text">Tell us about your dream project</p>
             <p class="get-in-touch__heading heading">Get in touch</p>
-            <form  class="get-in-touch__form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="get-in-touch__form-control" type="text" name="Name" aria-label="Name" placeholder="Name" required>
-              <input class="get-in-touch__form-control" type="tel" name="Phone number" aria-label="Phone number" placeholder="Phone number" required>
-              <input class="get-in-touch__form-control" type="email" name="Email" aria-label="Email" placeholder="Email" required>
+            <form class="get-in-touch__form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="get-in-touch__form-control js-user-name" type="text" name="Name" aria-label="Name" placeholder="Name"
+                required>
+              <input class="get-in-touch__form-control js-user-phone" type="tel" name="Phone number" aria-label="Phone number"
+                placeholder="Phone number" required>
+              <input class="get-in-touch__form-control js-user-mail" type="email" name="Email" aria-label="Email" placeholder="Email"
+                required pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
               <div class="get-in-touch__message-wrapper">
                 <label class="get-in-touch__message-label" for="message">Tell us about your project</label>
-                <textarea class="get-in-touch__message" rows="3" id="message" name="message"></textarea>
+                <textarea class="get-in-touch__message js-user-message" rows="3" id="message" name="message" required></textarea>
               </div>
               <button class="get-in-touch__submit-btn site-link site-link--animated" type="submit">Send</button>
             </form>
@@ -310,6 +249,18 @@
     </div>
 
   </footer>
+
+  <template id="categories-template">
+    <li class="our-projects__item">
+      <button class="our-projects__btn" type="button" data-filter="hi-tech">
+        <span class="our-projects__btn-inner">
+          <span class="our-projects__btn-txt"></span>
+          <sup class="our-projects__btn-project-count">14</sup>
+        </span>
+      </button>
+    </li>
+  </template>
+
   <script src="js/main.js"></script>
 </body>
 </html>
