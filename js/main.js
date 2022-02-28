@@ -122,11 +122,10 @@ function homePage() {
   function getPartners(partners) {
     const elPartnerFragment = document.createDocumentFragment()
     for (let partner of partners) {
-      console.log(partner.image.src);
       const partnerClone = elPartnerTemplate.cloneNode(true)
 
       partnerClone.querySelector('.partners__link').href = partner.url
-      partnerClone.querySelector('.partners__img').src = API + '/' + partner.image.src
+      partnerClone.querySelector('.partners__img').src = API + '/uploads/images/' + partner.image.src
 
       elPartnerFragment.appendChild(partnerClone)
     }
@@ -157,7 +156,7 @@ function projectPage() {
     for (let material of materials) {
       const materialClone = elMaterialTemplate.cloneNode(true)
 
-      materialClone.querySelector('.materials__img').src = API + '/api/uploads/images/' + material.image.src
+      materialClone.querySelector('.materials__img').src = API + '/uploads/images/' + material.image.src
       materialClone.querySelector('.materials__desc').textContent = material.name
 
       materialFragment.appendChild(materialClone)
@@ -231,4 +230,6 @@ if (window.location.href.match('our-projects.html')) {
   homePage()
 } else if (window.location.href.match('/project.html')) {
   projectPage()
+} else {
+  homePage()
 }
