@@ -93,6 +93,10 @@
   }
 }
 
+.our-projects__btn-txt {
+  pointer-events: none;
+}
+
 .our-projects__btn--active
 .our-projects__btn-txt {
   opacity: 1;
@@ -101,16 +105,19 @@
 .our-projects__btn-inner {
   display: flex;
   align-items: flex-start;
+  pointer-events: none;
 }
 
 .our-projects__btn-txt {
   text-transform: uppercase;
   color: $color-white;
+  pointer-events: none;
   opacity: 0.3;
 }
 
 .our-projects__btn-project-count {
   color: $color-white;
+  pointer-events: none;
   opacity: 0.3;
 }
 

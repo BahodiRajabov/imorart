@@ -1,11 +1,16 @@
 .gallery__list {
+  display: flex;
+  flex-wrap: wrap;
   @include list-unstyled;
+  margin-left: -20px;
   margin-bottom: -80px;
 }
 
 .gallery__item {
+  width: calc(50% - 20px);
   display: flex;
-  margin-left: -30px;
+  flex-direction: column;
+  margin-left: 20px;
   margin-bottom: 80px;
 
   &:nth-child(even) {
@@ -13,10 +18,24 @@
   }
 }
 
+.gallery__figure {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(95%);
+  }
+}
+
 .gallery__figure-link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   position: relative;
   z-index: 1;
-  display: block;
   text-decoration: none;
   overflow: hidden;
 
@@ -49,6 +68,9 @@
 }
 
 .gallery__img-design {
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
   transition: transform 0.4s ease;
 }
 
@@ -74,47 +96,37 @@
   }
 }
 
-.gallery__item {
+// .gallery__item {
 
-  &:nth-child(odd) {
-    .gallery__figure {
-      &:nth-child(1) {
-        .gallery__design-title {
-          padding-left: 100px;
-        }
-      }
-    }
-  }
+//   &:nth-child(odd) {
+//     .gallery__figure {
+//       &:nth-child(1) {
+//         .gallery__design-title {
+//           padding-left: 100px;
+//         }
+//       }
+//     }
+//   }
 
-  &:nth-child(even) {
-    .gallery__figure {
-      &:nth-child(2) {
-        .gallery__design-title {
-          padding-left: 100px;
-        }
-      }
-    }
+//   &:nth-child(even) {
+//     .gallery__figure {
+//       &:nth-child(2) {
+//         .gallery__design-title {
+//           padding-left: 100px;
+//         }
+//       }
+//     }
 
-    .gallery__figure {
-      &:nth-child(1) {
-        .gallery__design-title {
-          margin-left: 306px;
-        }
-      }
-    }
-  }
+//     .gallery__figure {
+//       &:nth-child(1) {
+//         .gallery__design-title {
+//           margin-left: 306px;
+//         }
+//       }
+//     }
+//   }
 
-}
-
-.gallery__figure {
-  margin: 0;
-  margin-left: 30px;
-  transition: transform 0.2s ease;
-
-  &:active {
-    transform: scale(95%);
-  }
-}
+// }
 
 .gallery__img-design {
   display: block;
@@ -141,108 +153,21 @@
   margin-top: 160px;
 }
 
+@include breakpoint-down(835px) {
 
-@include breakpoint-down(1125px) {
-
-  .gallery__item {
-
-    &:nth-child(odd) {
-      .gallery__figure {
-        &:nth-child(1) {
-          .gallery__design-title {
-            padding-left: 20px;
-          }
-        }
-      }
-    }
-  
-    &:nth-child(even) {
-      .gallery__figure {
-        &:nth-child(2) {
-          .gallery__design-title {
-            padding-left: 20px;
-          }
-        }
-      }
-  
-      .gallery__figure {
-        &:nth-child(1) {
-          .gallery__design-title {
-            margin-left: auto;
-          }
-        }
-      }
-    }
-  
+  .gallery__list {
+    flex-direction: column;
+    margin-left: 0;
   }
 
-}
-
-@include breakpoint-down(1024px) {
-
   .gallery__item {
-
-    &:nth-child(odd) {
-      .gallery__figure {
-        &:nth-child(1) {
-          .gallery__design-title {
-            padding-left: 0;
-          }
-        }
-      }
-    }
-  
-    &:nth-child(even) {
-      .gallery__figure {
-        &:nth-child(2) {
-          .gallery__design-title {
-            padding-left: 0;
-          }
-        }
-      }
-    }
-  
-  }
-
-  .gallery__design-heading {
-    margin-right: 20px;
+    width: 100%;
+    margin-left: 0;
   }
 
 }
 
 @include breakpoint-down(775px) {
-
-  .gallery__item {
-
-    &:nth-child(odd) {
-      .gallery__figure {
-        &:nth-child(1) {
-          .gallery__design-title {
-            padding-left: 0;
-          }
-        }
-      }
-    }
-  
-    &:nth-child(even) {
-      .gallery__figure {
-        &:nth-child(2) {
-          .gallery__design-title {
-            padding-left: 0;
-          }
-        }
-      }
-  
-      .gallery__figure {
-        &:nth-child(1) {
-          .gallery__design-title {
-            margin-left: 0;
-          }
-        }
-      }
-    }
-  
-  }
 
   .gallery__figure {
     display: flex;
@@ -256,11 +181,6 @@
   }
 
   .gallery__link {
-    flex-grow: 1;
-  }
-
-  .gallery__img-design {
-    width: 552px;
     flex-grow: 1;
   }
 

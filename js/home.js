@@ -1,10 +1,42 @@
 import { API } from "./main.js"
+// PROJECTS
+const elGalleryList = document.querySelector('.gallery__list')
+const elGalleryTemplate = document.querySelector('#gallery-template').content
 // PLANS
 const elPlansTemplate = document.querySelector('#plans-template').content
 const elPlansList = document.querySelector('.plans-services__grid')
 // PARTNERS
 const elPartnerTemplate = document.querySelector('#partners-template').content
 const elPartnerList = document.querySelector('.partners__list')
+
+// SHOW PROJECTS
+function showProjects() {
+  fetch(API + '/api/projects')
+  .then(res => res.json())
+  .then(data => {
+    if(data.success) {
+      getProjects(data.data.projects)
+    }
+  })
+  .catch(err => console.log(err))
+}
+
+// RENDER PROJECTS
+function getProjects(projects) {
+  const projectFragment = document.createDocumentFragment()
+  
+  for (const project of projects) {
+    const projectClone = elGalleryTemplate.cloneNode(true)
+
+    projectClone.querySelector('.gallery__figure-link').id = project.id
+    projectClone.querySelector('.gallery__img-design').src = API + '/uploads/images/' + project.project_images[0].image.src
+    projectClone.querySelector('.gallery__design-heading').textContent = project.name
+    projectClone.querySelector('.gallery__design-style').textContent = project.category.name
+
+    projectFragment.append(projectClone)
+  }
+  elGalleryList.append(projectFragment)
+}
 
 // PLANS LIST
 function showPlans() {
@@ -86,6 +118,7 @@ function getPartners(partners) {
   elPartnerList.appendChild(elPartnerFragment)
 }
 
-showPartners()
 
+showProjects()
+showPartners()
 showPlans()
