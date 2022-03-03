@@ -39,7 +39,7 @@
                   <button class="our-projects__btn our-projects__btn--active" type="button" data-filter="all">
                     <span class="our-projects__btn-inner">
                       <span class="our-projects__btn-txt">All projects</span>
-                      <sup class="our-projects__btn-project-count">177</sup>
+                      <sup class="our-projects__btn-project-count js-btn-project-count"></sup>
                     </span>
                   </button>
                 </li>
@@ -80,8 +80,8 @@
               <input class="get-in-touch__form-control js-user-mail" type="email" name="Email" aria-label="Email" placeholder="Email"
                 required pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
               <div class="get-in-touch__message-wrapper">
+                <textarea class="get-in-touch__message js-user-message" id="message" name="message" required></textarea>
                 <label class="get-in-touch__message-label" for="message">Tell us about your project</label>
-                <textarea class="get-in-touch__message js-user-message" rows="3" id="message" name="message" required></textarea>
               </div>
               <button class="get-in-touch__submit-btn site-link site-link--animated" type="submit">Send</button>
             </form>

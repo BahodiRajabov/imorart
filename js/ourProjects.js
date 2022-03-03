@@ -8,12 +8,13 @@ const elCategoriesList = document.querySelector('.our-projects__list')
 const elGalleryList = document.querySelector('.gallery__list')
 const elGalleryTemplate = document.querySelector('#gallery-template').content
 
-function showCategories() {
-  fetch(API + '/api/categories')
+async function showCategories() {
+  await fetch(API + '/api/categories')
     .then(res => res.json())
     .then(data => {
       getCategories(data.data.categories)
     })
+  addEventToButtons()
 }
 
 function getCategories(categories) {
@@ -38,6 +39,7 @@ function showProjects() {
   .then(data => {
     if(data.success) {
       PROJECTS = data.data.projects
+      elCategoriesList.querySelector('.js-btn-project-count').textContent = PROJECTS.length || '0'
       getProjects(data.data.projects)
     }
   })
@@ -83,6 +85,21 @@ function onFilterListClick(evt) {
       }
     })
     .catch(err => console.log(err))
+  }
+}
+
+function addEventToButtons() {
+  const elsCategoryBtn = elCategoriesList.querySelectorAll('.our-projects__btn')
+
+  if(elsCategoryBtn.length > 0) {
+    elsCategoryBtn.forEach(btn => {
+      btn.addEventListener('click', (evt) => {
+        elsCategoryBtn.forEach(button => {
+          button.classList.remove('our-projects__btn--active')
+        })
+        btn.classList.add('our-projects__btn--active')
+      })
+    })
   }
 }
 

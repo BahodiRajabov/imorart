@@ -47,7 +47,7 @@
 .get-in-touch__message-wrapper {
   width: 100%;
   position: relative;
-  margin-top: 14px;
+  margin-top: 80px;
   margin-bottom: 60px;
 }
 
@@ -61,14 +61,16 @@
 
 .get-in-touch__message {
   width: 100%;
-  padding-bottom: 16px;
   font-size: 20px;
-  line-height: 26px;
   color: #fff;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
   resize: none;
+}
+
+.get-in-touch__message:focus + .get-in-touch__message-label {
+  display: none;
 }
 
 .get-in-touch__submit-btn {
