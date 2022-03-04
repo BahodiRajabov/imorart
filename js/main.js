@@ -1,10 +1,14 @@
 // API
 export const API = `http://147.182.187.59:3000`
+export let PROJECTS = null
 
 // FOR FILTER TOGGLE
 const elFilter = document.querySelector('.our-projects__filter')
 const elFilterBtn = document.querySelector('.js-filter-btn')
 const elFilterCloseBtn = document.querySelector('.js-filter-close')
+
+// PROJECT GALLERY
+const elGalleryList = document.querySelector('.gallery__list')
 
 // FETCH FORM
 function fetchForm() {
@@ -54,6 +58,16 @@ function closeFilter() {
   elFilter.classList.remove('our-projects__filter--open')
   elFilterBtn.addEventListener('click', openFilter)
   elFilterCloseBtn.addEventListener('click', closeFilter)
+}
+
+function getIdFromProject(evt) {
+  if (evt.target.closest('.gallery__figure-link')) {
+    localStorage.setItem('projectId', JSON.stringify(evt.target.closest('.gallery__figure-link').id))
+  }
+}
+
+if (elGalleryList) {
+  elGalleryList.addEventListener('click', getIdFromProject)
 }
 
 if (elFilterBtn) {

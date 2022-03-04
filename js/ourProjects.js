@@ -1,5 +1,4 @@
-import { API } from "./main.js"
-let PROJECTS = null
+import { API, PROJECTS } from "./main.js"
 
 // CATEGORIES
 const elCategoryTemplate = document.querySelector('#categories-template').content
@@ -39,6 +38,7 @@ function showProjects() {
   .then(data => {
     if(data.success) {
       PROJECTS = data.data.projects
+      SINGLE_PROJECT = data.data.projects
       elCategoriesList.querySelector('.js-btn-project-count').textContent = PROJECTS.length || '0'
       getProjects(data.data.projects)
     }

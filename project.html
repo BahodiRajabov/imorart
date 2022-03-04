@@ -43,34 +43,7 @@
       <h2 class="visually-hidden">Our projects</h2>
       <div class="big-container big-container--bigger">
         <ul class="project-info__gallery">
-          <li class="project-info__gallery-item">
-            <picture class="project-info__gallery-img">
-              <source media="(max-width: 375px)" srcset="img/mobile1.jpg 1x, img/mobile1@2x.jpg 2x">
-              <source media="(max-width: 1024px)" srcset="img/tablet1.jpg 1x, img/tablet1@2x.jpg 2x">
-              <img src="img/img1.jpg" srcset="img/img1@2x.jpg 2x" alt="img" width="1440" height="600">
-            </picture>
-          </li>
-          <li class="project-info__gallery-item">
-            <picture class="project-info__gallery-img">
-              <source media="(max-width: 375px)" srcset="img/mobile2.jpg 1x, img/mobile2@2x.jpg 2x">
-              <source media="(max-width: 1024px)" srcset="img/tablet2.jpg 1x, img/tablet2@2x.jpg 2x">
-              <img src="img/img2.jpg" srcset="img/img2@2x.jpg 2x" alt="img" width="1440" height="600">
-            </picture>
-          </li>
-          <li class="project-info__gallery-item">
-            <picture class="project-info__gallery-img">
-              <source media="(max-width: 375px)" srcset="img/mobile3.jpg 1x, img/mobile3@2x.jpg 2x">
-              <source media="(max-width: 1024px)" srcset="img/tablet3.jpg 1x, img/tablet3@2x.jpg 2x">
-              <img src="img/img3.jpg" srcset="img/img3@2x.jpg 2x" alt="img" width="1440" height="600">
-            </picture>
-          </li>
-          <li class="project-info__gallery-item">
-            <picture class="project-info__gallery-img">
-              <source media="(max-width: 375px)" srcset="img/mobile4.jpg 1x, img/mobile4@2x.jpg 2x">
-              <source media="(max-width: 1024px)" srcset="img/tablet4.jpg 1x, img/tablet4@2x.jpg 2x">
-              <img src="img/img4.jpg" srcset="img/img4@2x.jpg 2x" alt="img" width="1440" height="600">
-            </picture>
-          </li>
+          
         </ul>
       </div>
     </section>
@@ -84,24 +57,6 @@
         </header>
         <ul class="materials__list">
           
-          <!-- <li class="materials__item">
-            <figure class="materials__content">
-              <img class="materials__img" src="img/iron-material.png" srcset="img/iron-material@2x.png 2x" alt="" width="180" height="180">
-              <figcaption class="materials__desc">Iron material</figcaption>
-            </figure>
-          </li>
-          <li class="materials__item">
-            <figure class="materials__content">
-              <img class="materials__img" src="img/raw-steel.png" srcset="img/raw-steel@2x.png 2x" alt="" width="180" height="180">
-              <figcaption class="materials__desc">Raw steel</figcaption>
-            </figure>
-          </li>
-          <li class="materials__item">
-            <figure class="materials__content">
-              <img class="materials__img" src="img/cast-stone.png" srcset="img/cast-stone@2x.png 2x" alt="" width="180" height="180">
-              <figcaption class="materials__desc">Cast stone</figcaption>
-            </figure>
-          </li> -->
         </ul>
       </div>
     </section>
@@ -111,34 +66,7 @@
       <div class="big-container big-container--bigger">
         <div class="carousel">
           <ul class="carousel__list">
-            <li class="carousel__item">
-              <picture class="carousel__img">
-                <source media="(max-width: 375px)" srcset="img/mobile1.jpg 1x, img/mobile1@2x.jpg 2x">
-                <source media="(max-width: 1024px)" srcset="img/tablet1.jpg 1x, img/tablet1@2x.jpg 2x">
-                <img src="img/img1.jpg" srcset="img/img1@2x.jpg 2x" alt="img" width="1440" height="600">
-              </picture>
-            </li>
-            <li class="carousel__item">
-              <picture class="carousel__img">
-                <source media="(max-width: 375px)" srcset="img/mobile2.jpg 1x, img/mobile2@2x.jpg 2x">
-                <source media="(max-width: 1024px)" srcset="img/tablet2.jpg 1x, img/tablet2@2x.jpg 2x">
-                <img src="img/img2.jpg" srcset="img/img2@2x.jpg 2x" alt="img" width="1440" height="600">
-              </picture>
-            </li>
-            <li class="carousel__item">
-              <picture class="carousel__img">
-                <source media="(max-width: 375px)" srcset="img/mobile3.jpg 1x, img/mobile3@2x.jpg 2x">
-                <source media="(max-width: 1024px)" srcset="img/tablet3.jpg 1x, img/tablet3@2x.jpg 2x">
-                <img src="img/img3.jpg" srcset="img/img3@2x.jpg 2x" alt="img" width="1440" height="600">
-              </picture>
-            </li>
-            <li class="carousel__item">
-              <picture class="carousel__img">
-                <source media="(max-width: 375px)" srcset="img/mobile4.jpg 1x, img/mobile4@2x.jpg 2x">
-                <source media="(max-width: 1024px)" srcset="img/tablet4.jpg 1x, img/tablet4@2x.jpg 2x">
-                <img src="img/img4.jpg" srcset="img/img4@2x.jpg 2x" alt="img" width="1440" height="600">
-              </picture>
-            </li>
+            
           </ul>
           <div class="carousel__buttons">
             <button class="carousel__button carousel__button--previous">
@@ -221,6 +149,22 @@
         <img class="materials__img" src="img/wine-garden.png" srcset="img/wine-garden@2x.png 2x" alt="" width="180" height="180">
         <figcaption class="materials__desc"></figcaption>
       </figure>
+    </li>
+  </template>
+
+  <template id="project-gallery-temp">
+    <li class="project-info__gallery-item">
+      <picture class="project-info__gallery-img">
+        <img class="project-info__gallery-img-content" src="" alt="img" width="1440" height="600">
+      </picture>
+    </li>
+  </template>
+
+  <template id="carousel-temp">
+    <li class="carousel__item">
+      <picture class="carousel__img">
+        <img class="carousel__img-content" src="" alt="img" width="1440" height="600">
+      </picture>
     </li>
   </template>
   

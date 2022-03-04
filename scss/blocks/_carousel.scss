@@ -1,18 +1,11 @@
-.carousel {
-
-}
-
 .carousel__list {
   display: flex;
   @include list-unstyled;
 }
 
-.carousel__item {
-
-}
-
 .carousel__img img {
   display: block;
+  object-fit: cover;
 }
 
 .carousel__buttons {
